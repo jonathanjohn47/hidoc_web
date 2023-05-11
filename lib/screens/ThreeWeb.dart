@@ -5,20 +5,22 @@
 import 'package:flutter/material.dart';
 
 class ThreeWeb extends StatelessWidget {
+  const ThreeWeb({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffffff),
+      backgroundColor: const Color(0xffffffff),
       body: Container(
         margin: EdgeInsets.zero,
         padding: EdgeInsets.zero,
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-          color: Color(0xfff4f4f4),
+          color: const Color(0xfff4f4f4),
           shape: BoxShape.rectangle,
           borderRadius: BorderRadius.zero,
-          border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+          border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -32,14 +34,17 @@ class ThreeWeb extends StatelessWidget {
               children: [
                 MaterialButton(
                   onPressed: () {},
-                  color: Color(0xff2dc4d8),
+                  color: const Color(0xff2dc4d8),
                   elevation: 4,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4.0),
-                    side: BorderSide(color: Color(0xff2dc4d8), width: 0),
+                    side: const BorderSide(color: Color(0xff2dc4d8), width: 0),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  child: Text(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  textColor: const Color(0xff000000),
+                  height: 40,
+                  minWidth: 140,
+                  child: const Text(
                     "Read More Bulletins",
                     style: TextStyle(
                       fontSize: 14,
@@ -47,13 +52,10 @@ class ThreeWeb extends StatelessWidget {
                       fontStyle: FontStyle.normal,
                     ),
                   ),
-                  textColor: Color(0xff000000),
-                  height: 40,
-                  minWidth: 140,
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
               width: 16,
             ),
@@ -70,21 +72,21 @@ class ThreeWeb extends StatelessWidget {
                     width: 200,
                     height: 100,
                     decoration: BoxDecoration(
-                      color: Color(0x00000000),
+                      color: const Color(0x00000000),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.zero,
-                      border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                      border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                           width: 16,
                         ),
-                        Text(
+                        const Text(
                           "Latest Articles",
                           textAlign: TextAlign.start,
                           overflow: TextOverflow.clip,
@@ -95,7 +97,7 @@ class ThreeWeb extends StatelessWidget {
                             color: Color(0xff000000),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                           width: 16,
                         ),
@@ -105,13 +107,13 @@ class ThreeWeb extends StatelessWidget {
                             scrollDirection: Axis.vertical,
                             padding: EdgeInsets.zero,
                             shrinkWrap: false,
-                            physics: ScrollPhysics(),
+                            physics: const ScrollPhysics(),
                             children: [
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisSize: MainAxisSize.max,
-                                children: [
+                                children: const [
                                   Divider(
                                     color: Color(0xff808080),
                                     height: 16,
@@ -143,7 +145,7 @@ class ThreeWeb extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -155,17 +157,17 @@ class ThreeWeb extends StatelessWidget {
                     width: 200,
                     height: 100,
                     decoration: BoxDecoration(
-                      color: Color(0x00000000),
+                      color: const Color(0x00000000),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.zero,
-                      border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                      border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Text(
+                        const Text(
                           "Trending Articles",
                           textAlign: TextAlign.start,
                           overflow: TextOverflow.clip,
@@ -176,7 +178,7 @@ class ThreeWeb extends StatelessWidget {
                             color: Color(0xff000000),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                           width: 16,
                         ),
@@ -186,13 +188,13 @@ class ThreeWeb extends StatelessWidget {
                             scrollDirection: Axis.vertical,
                             padding: EdgeInsets.zero,
                             shrinkWrap: false,
-                            physics: ScrollPhysics(),
+                            physics: const ScrollPhysics(),
                             children: [
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisSize: MainAxisSize.max,
-                                children: [
+                                children: const [
                                   Divider(
                                     color: Color(0xff808080),
                                     height: 16,
@@ -229,7 +231,7 @@ class ThreeWeb extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -246,18 +248,18 @@ class ThreeWeb extends StatelessWidget {
                         width: 200,
                         height: 100,
                         decoration: BoxDecoration(
-                          color: Color(0x00000000),
+                          color: const Color(0x00000000),
                           shape: BoxShape.rectangle,
                           borderRadius: BorderRadius.zero,
                           border:
-                              Border.all(color: Color(0x4d9e9e9e), width: 1),
+                              Border.all(color: const Color(0x4d9e9e9e), width: 1),
                         ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Text(
+                            const Text(
                               "Explore more in Articles",
                               textAlign: TextAlign.start,
                               overflow: TextOverflow.clip,
@@ -268,7 +270,7 @@ class ThreeWeb extends StatelessWidget {
                                 color: Color(0xff000000),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                               width: 16,
                             ),
@@ -278,14 +280,14 @@ class ThreeWeb extends StatelessWidget {
                                 scrollDirection: Axis.vertical,
                                 padding: EdgeInsets.zero,
                                 shrinkWrap: false,
-                                physics: ScrollPhysics(),
+                                physics: const ScrollPhysics(),
                                 children: [
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     mainAxisSize: MainAxisSize.max,
-                                    children: [
+                                    children: const [
                                       Divider(
                                         color: Color(0xff808080),
                                         height: 16,
@@ -312,21 +314,24 @@ class ThreeWeb extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                         width: 16,
                       ),
                       MaterialButton(
                         onPressed: () {},
-                        color: Color(0xff2dc4d8),
+                        color: const Color(0xff2dc4d8),
                         elevation: 4,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(4.0),
-                          side: BorderSide(color: Color(0xff2dc4d8), width: 1),
+                          side: const BorderSide(color: Color(0xff2dc4d8), width: 1),
                         ),
                         padding:
-                            EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                        child: Text(
+                            const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        textColor: const Color(0xff000000),
+                        height: 40,
+                        minWidth: 140,
+                        child: const Text(
                           "Explore Hidoc Dr.",
                           style: TextStyle(
                             fontSize: 14,
@@ -334,9 +339,6 @@ class ThreeWeb extends StatelessWidget {
                             fontStyle: FontStyle.normal,
                           ),
                         ),
-                        textColor: Color(0xff000000),
-                        height: 40,
-                        minWidth: 140,
                       ),
                     ],
                   ),

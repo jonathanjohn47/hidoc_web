@@ -14,6 +14,6 @@ extension DateTimeHelpers on DateTime {
       11: "Nov",
       12: "Dec",
     };
-    return "${this.day} ${months[this.month]} ${this.year}";
+    return "$day ${months[month]} $year";
   }
 }

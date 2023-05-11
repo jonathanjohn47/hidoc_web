@@ -5,10 +5,12 @@
 import 'package:flutter/material.dart';
 
 class TwoWeb extends StatelessWidget {
+  const TwoWeb({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffffff),
+      backgroundColor: const Color(0xffffffff),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,7 +27,7 @@ class TwoWeb extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
-                  children: [
+                  children: const [
                     Text(
                       "Hidoc Bulletin",
                       textAlign: TextAlign.start,
@@ -45,14 +47,14 @@ class TwoWeb extends StatelessWidget {
                     scrollDirection: Axis.vertical,
                     padding: EdgeInsets.zero,
                     shrinkWrap: false,
-                    physics: ScrollPhysics(),
+                    physics: const ScrollPhysics(),
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                             width: 16,
                           ),
@@ -61,17 +63,17 @@ class TwoWeb extends StatelessWidget {
                             padding: EdgeInsets.zero,
                             width: MediaQuery.of(context).size.width * 0.3,
                             height: 8,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xff2dc4d8),
                               shape: BoxShape.rectangle,
                               borderRadius: BorderRadius.zero,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                             width: 16,
                           ),
-                          Text(
+                          const Text(
                             "Vaccine hesitancy: Where are we and where are we going? ",
                             textAlign: TextAlign.start,
                             overflow: TextOverflow.clip,
@@ -82,11 +84,11 @@ class TwoWeb extends StatelessWidget {
                               color: Color(0xff000000),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                             width: 16,
                           ),
-                          Text(
+                          const Text(
                             "A justified way to prevent infection explosion associated with lethal damage is timely vaccination. It provides immunization, builds self-immunity & provides overspread health protection. Infectious diseases & their variants are an uncontrollable threat to human exsisten... ",
                             textAlign: TextAlign.start,
                             overflow: TextOverflow.clip,
@@ -97,11 +99,11 @@ class TwoWeb extends StatelessWidget {
                               color: Color(0xff000000),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                             width: 16,
                           ),
-                          Text(
+                          const Text(
                             "Read More...",
                             textAlign: TextAlign.start,
                             overflow: TextOverflow.clip,
@@ -112,11 +114,11 @@ class TwoWeb extends StatelessWidget {
                               color: Color(0xff2dc4d8),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                             width: 16,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                             width: 16,
                           ),
@@ -128,20 +130,20 @@ class TwoWeb extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
             width: 8,
           ),
           Container(
             margin: EdgeInsets.zero,
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             width: MediaQuery.of(context).size.width * 0.5,
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
-              color: Color(0xffd8ecf0),
+              color: const Color(0xffd8ecf0),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.circular(16.0),
-              border: Border.all(color: Color(0xffd8ecf0), width: 1),
+              border: Border.all(color: const Color(0xffd8ecf0), width: 1),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -152,7 +154,7 @@ class TwoWeb extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
-                  children: [
+                  children: const [
                     Expanded(
                       flex: 1,
                       child: Text(
@@ -169,7 +171,7 @@ class TwoWeb extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -179,13 +181,13 @@ class TwoWeb extends StatelessWidget {
                     scrollDirection: Axis.vertical,
                     padding: EdgeInsets.zero,
                     shrinkWrap: false,
-                    physics: ScrollPhysics(),
+                    physics: const ScrollPhysics(),
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.max,
-                        children: [
+                        children: const [
                           Text(
                             "Combination of Radiation therapy and Hormone therapy for Prostate cancer (PCa) ",
                             textAlign: TextAlign.start,

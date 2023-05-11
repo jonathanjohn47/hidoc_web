@@ -5,10 +5,12 @@
 import 'package:flutter/material.dart';
 
 class SixWeb extends StatelessWidget {
+  const SixWeb({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffffff),
+      backgroundColor: const Color(0xffffffff),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -20,10 +22,10 @@ class SixWeb extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * 0.5,
             decoration: BoxDecoration(
-              color: Color(0xff081734),
+              color: const Color(0xff081734),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.zero,
-              border: Border.all(color: Color(0xff081734), width: 1),
+              border: Border.all(color: const Color(0xff081734), width: 1),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -38,14 +40,14 @@ class SixWeb extends StatelessWidget {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       ///***If you have exported images you must have to copy those images in assets/images directory.
-                      Image(
+                      const Image(
                         image:
                             NetworkImage("https://picsum.photos/250?image=9"),
                         height: 100,
                         width: 140,
                         fit: BoxFit.cover,
                       ),
-                      Text(
+                      const Text(
                         "#1 Medical app in India for doctors with 800K Monthly Users",
                         textAlign: TextAlign.start,
                         overflow: TextOverflow.clip,
@@ -60,7 +62,7 @@ class SixWeb extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisSize: MainAxisSize.max,
-                        children: [
+                        children: const [
                           Icon(
                             Icons.info_outline,
                             color: Color(0xffffffff),
@@ -71,7 +73,7 @@ class SixWeb extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -81,7 +83,7 @@ class SixWeb extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.max,
-                    children: [
+                    children: const [
                       Text(
                         "Reach Us",
                         textAlign: TextAlign.start,
@@ -163,7 +165,7 @@ class SixWeb extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -173,7 +175,7 @@ class SixWeb extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
-                    children: [
+                    children: const [
                       Text(
                         "Hidoc Dr. Features",
                         textAlign: TextAlign.start,
@@ -212,10 +214,10 @@ class SixWeb extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             height: 60,
             decoration: BoxDecoration(
-              color: Color(0xffcfd8db),
+              color: const Color(0xffcfd8db),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.zero,
-              border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+              border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -226,7 +228,7 @@ class SixWeb extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
-                  children: [
+                  children: const [
                     Text(
                       "© Copyright 2022",
                       textAlign: TextAlign.start,
@@ -255,7 +257,7 @@ class SixWeb extends StatelessWidget {
                     ),
                   ],
                 ),
-                Text(
+                const Text(
                   "Terms and Conditions | Privacy Policy",
                   textAlign: TextAlign.start,
                   overflow: TextOverflow.clip,

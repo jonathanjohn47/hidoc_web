@@ -5,10 +5,12 @@
 import 'package:flutter/material.dart';
 
 class OneWeb extends StatelessWidget {
+  const OneWeb({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffffff),
+      backgroundColor: const Color(0xffffffff),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -18,7 +20,7 @@ class OneWeb extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
-            children: [
+            children: const [
               Text(
                 "Articles",
                 textAlign: TextAlign.start,
@@ -32,25 +34,25 @@ class OneWeb extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
             width: 16,
           ),
           Card(
-            margin: EdgeInsets.all(4.0),
-            color: Color(0xffe0e0e0),
-            shadowColor: Color(0xff000000),
+            margin: const EdgeInsets.all(4.0),
+            color: const Color(0xffe0e0e0),
+            shadowColor: const Color(0xff000000),
             elevation: 2,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(4.0),
-              side: BorderSide(color: Color(0x4d9e9e9e), width: 1),
+              side: const BorderSide(color: Color(0x4d9e9e9e), width: 1),
             ),
             child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: 50,
-                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
-                  color: Color(0xffffffff),
+                  color: const Color(0xffffffff),
                   borderRadius: BorderRadius.circular(0),
                 ),
                 child: DropdownButtonHideUnderline(
@@ -63,7 +65,7 @@ class OneWeb extends StatelessWidget {
                         child: Text(value),
                       );
                     }).toList(),
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Color(0xff000000),
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
@@ -75,7 +77,7 @@ class OneWeb extends StatelessWidget {
                   ),
                 )),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
             width: 16,
           ),
@@ -88,7 +90,7 @@ class OneWeb extends StatelessWidget {
                 alignment: Alignment.bottomRight,
                 children: [
                   ///***If you have exported images you must have to copy those images in assets/images directory.
-                  Image(
+                  const Image(
                     image: NetworkImage("https://picsum.photos/250?image=9"),
                     height: 100,
                     width: 140,
@@ -100,17 +102,17 @@ class OneWeb extends StatelessWidget {
                     width: 50,
                     height: 50,
                     decoration: BoxDecoration(
-                      color: Color(0xff2dc4d8),
+                      color: const Color(0xff2dc4d8),
                       shape: BoxShape.rectangle,
                       borderRadius:
-                          BorderRadius.only(topLeft: Radius.circular(16.0)),
-                      border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                          const BorderRadius.only(topLeft: Radius.circular(16.0)),
+                      border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
-                      children: [
+                      children: const [
                         SizedBox(
                           height: 8,
                           width: 16,
@@ -142,7 +144,7 @@ class OneWeb extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
                 width: 8,
               ),
@@ -152,7 +154,7 @@ class OneWeb extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.min,
-                  children: [
+                  children: const [
                     Text(
                       "Decoding the Nexus Criteria for Critical Care: A Comprehensive Guide ",
                       textAlign: TextAlign.start,

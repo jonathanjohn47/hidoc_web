@@ -31,7 +31,7 @@ class Dashboard extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisSize: MainAxisSize.max,
-                        children: [
+                        children: const [
                           Text(
                             "Articles",
                             textAlign: TextAlign.start,
@@ -45,26 +45,26 @@ class Dashboard extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                         width: 16,
                       ),
                       Card(
-                        margin: EdgeInsets.all(4.0),
-                        color: Color(0xffe0e0e0),
-                        shadowColor: Color(0xff000000),
+                        margin: const EdgeInsets.all(4.0),
+                        color: const Color(0xffe0e0e0),
+                        shadowColor: const Color(0xff000000),
                         elevation: 2,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(4.0),
-                          side: BorderSide(color: Color(0x4d9e9e9e), width: 1),
+                          side: const BorderSide(color: Color(0x4d9e9e9e), width: 1),
                         ),
                         child: Container(
                             width: 40.w,
                             height: 50,
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                                 horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
-                              color: Color(0xffffffff),
+                              color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(0),
                             ),
                             child: DropdownButtonHideUnderline(
@@ -78,7 +78,7 @@ class Dashboard extends StatelessWidget {
                                     child: Text(value),
                                   );
                                 }).toList(),
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Color(0xff000000),
                                   fontSize: 16,
                                   fontWeight: FontWeight.w400,
@@ -90,7 +90,7 @@ class Dashboard extends StatelessWidget {
                               ),
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                         width: 16,
                       ),
@@ -120,20 +120,20 @@ class Dashboard extends StatelessWidget {
                                   width: 50,
                                   height: 50,
                                   decoration: BoxDecoration(
-                                    color: Color(0xff2dc4d8),
+                                    color: const Color(0xff2dc4d8),
                                     shape: BoxShape.rectangle,
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                         topLeft: Radius.circular(16.0),
                                         bottomRight: Radius.circular(4.0)),
                                     border: Border.all(
-                                        color: Color(0x4d9e9e9e), width: 1),
+                                        color: const Color(0x4d9e9e9e), width: 1),
                                   ),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     mainAxisSize: MainAxisSize.min,
-                                    children: [
+                                    children: const [
                                       SizedBox(
                                         height: 8,
                                         width: 16,
@@ -180,14 +180,14 @@ class Dashboard extends StatelessWidget {
                                     articleModel.data.article.articleTitle,
                                     textAlign: TextAlign.start,
                                     overflow: TextOverflow.clip,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FontStyle.normal,
                                       fontSize: 14,
                                       color: Color(0xff000000),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                     width: 16,
                                   ),
@@ -196,18 +196,18 @@ class Dashboard extends StatelessWidget {
                                         .data.article.articleDescription,
                                     textAlign: TextAlign.start,
                                     overflow: TextOverflow.clip,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontWeight: FontWeight.w400,
                                       fontStyle: FontStyle.normal,
                                       fontSize: 12,
                                       color: Color(0xff000000),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                     width: 16,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Read full article to earn  points ",
                                     textAlign: TextAlign.start,
                                     overflow: TextOverflow.clip,
@@ -218,7 +218,7 @@ class Dashboard extends StatelessWidget {
                                       color: Color(0xff2dc4d8),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                     width: 16,
                                   ),
@@ -226,7 +226,7 @@ class Dashboard extends StatelessWidget {
                                     "Published Date: ${articleModel.data.article.createdAt!.getDateWithMonthName}",
                                     textAlign: TextAlign.start,
                                     overflow: TextOverflow.clip,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontWeight: FontWeight.w400,
                                       fontStyle: FontStyle.normal,
                                       fontSize: 12,
@@ -239,7 +239,7 @@ class Dashboard extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                         width: 16,
                       ),
@@ -248,7 +248,7 @@ class Dashboard extends StatelessWidget {
                         endIndent: 3.w,
                         thickness: 2,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                         width: 16,
                       ),
@@ -271,7 +271,7 @@ class Dashboard extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     mainAxisSize: MainAxisSize.max,
-                                    children: [
+                                    children: const [
                                       Text(
                                         "Hidoc Bulletin",
                                         textAlign: TextAlign.start,
@@ -291,7 +291,7 @@ class Dashboard extends StatelessWidget {
                                       scrollDirection: Axis.vertical,
                                       padding: EdgeInsets.zero,
                                       shrinkWrap: false,
-                                      physics: ScrollPhysics(),
+                                      physics: const ScrollPhysics(),
                                       children: [
                                         ...articleModel.data.bulletin
                                             .map(
@@ -302,7 +302,7 @@ class Dashboard extends StatelessWidget {
                                                     CrossAxisAlignment.start,
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 16,
                                                     width: 16,
                                                   ),
@@ -315,14 +315,14 @@ class Dashboard extends StatelessWidget {
                                                                 .width *
                                                             0.3,
                                                     height: 8,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xff2dc4d8),
                                                       shape: BoxShape.rectangle,
                                                       borderRadius:
                                                           BorderRadius.zero,
                                                     ),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 16,
                                                     width: 16,
                                                   ),
@@ -330,7 +330,7 @@ class Dashboard extends StatelessWidget {
                                                     e.articleTitle,
                                                     textAlign: TextAlign.start,
                                                     overflow: TextOverflow.clip,
-                                                    style: TextStyle(
+                                                    style: const TextStyle(
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontStyle:
@@ -339,7 +339,7 @@ class Dashboard extends StatelessWidget {
                                                       color: Color(0xff000000),
                                                     ),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 16,
                                                     width: 16,
                                                   ),
@@ -347,7 +347,7 @@ class Dashboard extends StatelessWidget {
                                                     e.articleDescription,
                                                     textAlign: TextAlign.start,
                                                     overflow: TextOverflow.clip,
-                                                    style: TextStyle(
+                                                    style: const TextStyle(
                                                       fontWeight:
                                                           FontWeight.w400,
                                                       fontStyle:
@@ -356,11 +356,11 @@ class Dashboard extends StatelessWidget {
                                                       color: Color(0xff000000),
                                                     ),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 16,
                                                     width: 16,
                                                   ),
-                                                  Text(
+                                                  const Text(
                                                     "Read More...",
                                                     textAlign: TextAlign.start,
                                                     overflow: TextOverflow.clip,
@@ -373,11 +373,11 @@ class Dashboard extends StatelessWidget {
                                                       color: Color(0xff2dc4d8),
                                                     ),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 16,
                                                     width: 16,
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 16,
                                                     width: 16,
                                                   ),
@@ -391,21 +391,21 @@ class Dashboard extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                               width: 8,
                             ),
                             Expanded(
                               child: Container(
                                 margin: EdgeInsets.zero,
-                                padding: EdgeInsets.all(8),
+                                padding: const EdgeInsets.all(8),
                                 width: 85.w,
                                 decoration: BoxDecoration(
-                                  color: Color(0xffd8ecf0),
+                                  color: const Color(0xffd8ecf0),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.circular(16.0),
                                   border: Border.all(
-                                      color: Color(0xffd8ecf0), width: 1),
+                                      color: const Color(0xffd8ecf0), width: 1),
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -418,7 +418,7 @@ class Dashboard extends StatelessWidget {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.center,
                                       mainAxisSize: MainAxisSize.max,
-                                      children: [
+                                      children: const [
                                         Text(
                                           "Trending Hidoc Bulletin",
                                           textAlign: TextAlign.start,
@@ -432,7 +432,7 @@ class Dashboard extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16,
                                       width: 16,
                                     ),
@@ -442,7 +442,7 @@ class Dashboard extends StatelessWidget {
                                         scrollDirection: Axis.vertical,
                                         padding: EdgeInsets.zero,
                                         shrinkWrap: false,
-                                        physics: ScrollPhysics(),
+                                        physics: const ScrollPhysics(),
                                         children: [
                                           ...articleModel.data.trandingBulletin
                                               .map(
@@ -460,7 +460,7 @@ class Dashboard extends StatelessWidget {
                                                           TextAlign.start,
                                                       overflow:
                                                           TextOverflow.clip,
-                                                      style: TextStyle(
+                                                      style: const TextStyle(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -470,7 +470,7 @@ class Dashboard extends StatelessWidget {
                                                             Color(0xff000000),
                                                       ),
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 16,
                                                       width: 16,
                                                     ),
@@ -480,7 +480,7 @@ class Dashboard extends StatelessWidget {
                                                           TextAlign.start,
                                                       overflow:
                                                           TextOverflow.clip,
-                                                      style: TextStyle(
+                                                      style: const TextStyle(
                                                         fontWeight:
                                                             FontWeight.w400,
                                                         fontStyle:
@@ -490,11 +490,11 @@ class Dashboard extends StatelessWidget {
                                                             Color(0xff000000),
                                                       ),
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 16,
                                                       width: 16,
                                                     ),
-                                                    Text(
+                                                    const Text(
                                                       "Read More...",
                                                       textAlign:
                                                           TextAlign.start,
@@ -510,11 +510,11 @@ class Dashboard extends StatelessWidget {
                                                             Color(0xff2dc4d8),
                                                       ),
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 16,
                                                       width: 16,
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 16,
                                                       width: 16,
                                                     ),
@@ -532,7 +532,7 @@ class Dashboard extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                         width: 16,
                       ),
@@ -542,7 +542,7 @@ class Dashboard extends StatelessWidget {
                           margin: EdgeInsets.zero,
                           padding: EdgeInsets.zero,
                           width: MediaQuery.of(context).size.width,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xfff4f4f4),
                             shape: BoxShape.rectangle,
                             borderRadius: BorderRadius.zero,
@@ -561,17 +561,19 @@ class Dashboard extends StatelessWidget {
                                   children: [
                                     MaterialButton(
                                       onPressed: () {},
-                                      color: Color(0xff2dc4d8),
+                                      color: const Color(0xff2dc4d8),
                                       elevation: 4,
                                       shape: RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(4.0),
-                                        side: BorderSide(
+                                        side: const BorderSide(
                                             color: Color(0xff2dc4d8), width: 0),
                                       ),
-                                      padding: EdgeInsets.symmetric(
+                                      padding: const EdgeInsets.symmetric(
                                           horizontal: 16, vertical: 8),
-                                      child: Text(
+                                      height: 40,
+                                      minWidth: 140,
+                                      child: const Text(
                                         "Read More Bulletins",
                                         style: TextStyle(
                                             fontSize: 14,
@@ -579,12 +581,10 @@ class Dashboard extends StatelessWidget {
                                             fontStyle: FontStyle.normal,
                                             color: Colors.white),
                                       ),
-                                      height: 40,
-                                      minWidth: 140,
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
@@ -601,11 +601,11 @@ class Dashboard extends StatelessWidget {
                                         width: 30.w,
                                         height: 25.h,
                                         decoration: BoxDecoration(
-                                          color: Color(0x00000000),
+                                          color: const Color(0x00000000),
                                           shape: BoxShape.rectangle,
                                           borderRadius: BorderRadius.zero,
                                           border: Border.all(
-                                              color: Color(0x4d9e9e9e),
+                                              color: const Color(0x4d9e9e9e),
                                               width: 1),
                                         ),
                                         child: Column(
@@ -615,11 +615,11 @@ class Dashboard extends StatelessWidget {
                                               CrossAxisAlignment.center,
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 16,
                                               width: 16,
                                             ),
-                                            Text(
+                                            const Text(
                                               "Latest Articles",
                                               textAlign: TextAlign.start,
                                               overflow: TextOverflow.clip,
@@ -630,7 +630,7 @@ class Dashboard extends StatelessWidget {
                                                 color: Color(0xff000000),
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 16,
                                               width: 16,
                                             ),
@@ -640,7 +640,7 @@ class Dashboard extends StatelessWidget {
                                                 scrollDirection: Axis.vertical,
                                                 padding: EdgeInsets.zero,
                                                 shrinkWrap: false,
-                                                physics: ScrollPhysics(),
+                                                physics: const ScrollPhysics(),
                                                 children: [
                                                   ...articleModel
                                                       .data.latestArticle
@@ -655,7 +655,7 @@ class Dashboard extends StatelessWidget {
                                                           mainAxisSize:
                                                               MainAxisSize.max,
                                                           children: [
-                                                            Divider(
+                                                            const Divider(
                                                               color: Color(
                                                                   0xff808080),
                                                               height: 16,
@@ -671,7 +671,7 @@ class Dashboard extends StatelessWidget {
                                                               overflow:
                                                                   TextOverflow
                                                                       .clip,
-                                                              style: TextStyle(
+                                                              style: const TextStyle(
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w400,
@@ -683,7 +683,7 @@ class Dashboard extends StatelessWidget {
                                                                     0xff000000),
                                                               ),
                                                             ),
-                                                            SizedBox(
+                                                            const SizedBox(
                                                               height: 16,
                                                               width: 16,
                                                             ),
@@ -698,7 +698,7 @@ class Dashboard extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16,
                                       width: 16,
                                     ),
@@ -710,11 +710,11 @@ class Dashboard extends StatelessWidget {
                                         width: 30.h,
                                         height: 25.h,
                                         decoration: BoxDecoration(
-                                          color: Color(0x00000000),
+                                          color: const Color(0x00000000),
                                           shape: BoxShape.rectangle,
                                           borderRadius: BorderRadius.zero,
                                           border: Border.all(
-                                              color: Color(0x4d9e9e9e),
+                                              color: const Color(0x4d9e9e9e),
                                               width: 1),
                                         ),
                                         child: Column(
@@ -724,7 +724,7 @@ class Dashboard extends StatelessWidget {
                                               CrossAxisAlignment.center,
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
-                                            Text(
+                                            const Text(
                                               "Trending Articles",
                                               textAlign: TextAlign.start,
                                               overflow: TextOverflow.clip,
@@ -735,7 +735,7 @@ class Dashboard extends StatelessWidget {
                                                 color: Color(0xff000000),
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 16,
                                               width: 16,
                                             ),
@@ -745,7 +745,7 @@ class Dashboard extends StatelessWidget {
                                                 scrollDirection: Axis.vertical,
                                                 padding: EdgeInsets.zero,
                                                 shrinkWrap: false,
-                                                physics: ScrollPhysics(),
+                                                physics: const ScrollPhysics(),
                                                 children: [
                                                   ...articleModel
                                                       .data.trandingArticle
@@ -760,7 +760,7 @@ class Dashboard extends StatelessWidget {
                                                           mainAxisSize:
                                                               MainAxisSize.max,
                                                           children: [
-                                                            Divider(
+                                                            const Divider(
                                                               color: Color(
                                                                   0xff808080),
                                                               height: 16,
@@ -783,7 +783,7 @@ class Dashboard extends StatelessWidget {
                                                               overflow:
                                                                   TextOverflow
                                                                       .clip,
-                                                              style: TextStyle(
+                                                              style: const TextStyle(
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w400,
@@ -806,7 +806,7 @@ class Dashboard extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16,
                                       width: 16,
                                     ),
@@ -825,11 +825,11 @@ class Dashboard extends StatelessWidget {
                                             width: 30.w,
                                             height: 20.h,
                                             decoration: BoxDecoration(
-                                              color: Color(0x00000000),
+                                              color: const Color(0x00000000),
                                               shape: BoxShape.rectangle,
                                               borderRadius: BorderRadius.zero,
                                               border: Border.all(
-                                                  color: Color(0x4d9e9e9e),
+                                                  color: const Color(0x4d9e9e9e),
                                                   width: 1),
                                             ),
                                             child: Column(
@@ -839,7 +839,7 @@ class Dashboard extends StatelessWidget {
                                                   CrossAxisAlignment.center,
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Text(
+                                                const Text(
                                                   "Explore more in Articles",
                                                   textAlign: TextAlign.start,
                                                   overflow: TextOverflow.clip,
@@ -850,7 +850,7 @@ class Dashboard extends StatelessWidget {
                                                     color: Color(0xff000000),
                                                   ),
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   height: 16,
                                                   width: 16,
                                                 ),
@@ -861,7 +861,7 @@ class Dashboard extends StatelessWidget {
                                                         Axis.vertical,
                                                     padding: EdgeInsets.zero,
                                                     shrinkWrap: false,
-                                                    physics: ScrollPhysics(),
+                                                    physics: const ScrollPhysics(),
                                                     children: [
                                                       ...articleModel
                                                           .data.exploreArticle
@@ -877,7 +877,7 @@ class Dashboard extends StatelessWidget {
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                Divider(
+                                                                const Divider(
                                                                   color: Color(
                                                                       0xff808080),
                                                                   height: 16,
@@ -894,7 +894,7 @@ class Dashboard extends StatelessWidget {
                                                                       TextOverflow
                                                                           .clip,
                                                                   style:
-                                                                      TextStyle(
+                                                                      const TextStyle(
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w400,
@@ -917,24 +917,27 @@ class Dashboard extends StatelessWidget {
                                               ],
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 16,
                                             width: 16,
                                           ),
                                           MaterialButton(
                                             onPressed: () {},
-                                            color: Color(0xff2dc4d8),
+                                            color: const Color(0xff2dc4d8),
                                             elevation: 4,
                                             shape: RoundedRectangleBorder(
                                               borderRadius:
                                                   BorderRadius.circular(4.0),
-                                              side: BorderSide(
+                                              side: const BorderSide(
                                                   color: Color(0xff2dc4d8),
                                                   width: 1),
                                             ),
-                                            padding: EdgeInsets.symmetric(
+                                            padding: const EdgeInsets.symmetric(
                                                 horizontal: 16, vertical: 8),
-                                            child: Text(
+                                            textColor: Colors.white,
+                                            height: 40,
+                                            minWidth: 140,
+                                            child: const Text(
                                               "Explore Hidoc Dr.",
                                               style: TextStyle(
                                                 fontSize: 14,
@@ -942,9 +945,6 @@ class Dashboard extends StatelessWidget {
                                                 fontStyle: FontStyle.normal,
                                               ),
                                             ),
-                                            textColor: Colors.white,
-                                            height: 40,
-                                            minWidth: 140,
                                           ),
                                         ],
                                       ),
@@ -956,7 +956,7 @@ class Dashboard extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                         width: 16,
                       ),
@@ -967,7 +967,7 @@ class Dashboard extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Text(
+                            const Text(
                               "Whats more on Hidoc Dr.",
                               textAlign: TextAlign.start,
                               overflow: TextOverflow.clip,
@@ -978,7 +978,7 @@ class Dashboard extends StatelessWidget {
                                 color: Color(0xff000000),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                               width: 16,
                             ),
@@ -998,12 +998,12 @@ class Dashboard extends StatelessWidget {
                                                 width: 200,
                                                 height: 100,
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xfff4f4f4),
+                                                  color: const Color(0xfff4f4f4),
                                                   shape: BoxShape.rectangle,
                                                   borderRadius:
                                                       BorderRadius.zero,
                                                   border: Border.all(
-                                                      color: Color(0x4d9e9e9e),
+                                                      color: const Color(0x4d9e9e9e),
                                                       width: 1),
                                                 ),
                                                 child: Row(
@@ -1030,7 +1030,7 @@ class Dashboard extends StatelessWidget {
                                                           mainAxisSize:
                                                               MainAxisSize.max,
                                                           children: [
-                                                            Text(
+                                                            const Text(
                                                               "News",
                                                               textAlign:
                                                                   TextAlign
@@ -1050,7 +1050,7 @@ class Dashboard extends StatelessWidget {
                                                                     0xff000000),
                                                               ),
                                                             ),
-                                                            SizedBox(
+                                                            const SizedBox(
                                                               height: 16,
                                                               width: 16,
                                                             ),
@@ -1062,7 +1062,7 @@ class Dashboard extends StatelessWidget {
                                                               overflow:
                                                                   TextOverflow
                                                                       .clip,
-                                                              style: TextStyle(
+                                                              style: const TextStyle(
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w400,
@@ -1078,7 +1078,7 @@ class Dashboard extends StatelessWidget {
                                                         ),
                                                       ),
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 16,
                                                       width: 16,
                                                     ),
@@ -1097,7 +1097,7 @@ class Dashboard extends StatelessWidget {
                                     options: CarouselOptions(),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
@@ -1106,7 +1106,7 @@ class Dashboard extends StatelessWidget {
                                   child: Container(
                                     margin: EdgeInsets.zero,
                                     padding: EdgeInsets.zero,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x00000000),
                                       shape: BoxShape.rectangle,
                                       borderRadius: BorderRadius.zero,
@@ -1130,21 +1130,21 @@ class Dashboard extends StatelessWidget {
                                               padding: EdgeInsets.zero,
                                               width: 40,
                                               height: 40,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 color: Color(0xffe3f1fd),
                                                 shape: BoxShape.circle,
                                               ),
-                                              child: Icon(
+                                              child: const Icon(
                                                 MdiIcons.trophy,
                                                 color: Color(0xff2398f4),
                                                 size: 24,
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 16,
                                               width: 16,
                                             ),
-                                            Text(
+                                            const Text(
                                               "Quizzes:",
                                               textAlign: TextAlign.start,
                                               overflow: TextOverflow.clip,
@@ -1155,11 +1155,11 @@ class Dashboard extends StatelessWidget {
                                                 color: Color(0xff000000),
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 16,
                                               width: 16,
                                             ),
-                                            Expanded(
+                                            const Expanded(
                                               child: Text(
                                                 "Participate and win exciting prizes",
                                                 textAlign: TextAlign.start,
@@ -1174,7 +1174,7 @@ class Dashboard extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        Divider(
+                                        const Divider(
                                           color: Color(0xff808080),
                                           height: 16,
                                           thickness: 1,
@@ -1193,21 +1193,21 @@ class Dashboard extends StatelessWidget {
                                               padding: EdgeInsets.zero,
                                               width: 40,
                                               height: 40,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 color: Color(0xffe3f1fd),
                                                 shape: BoxShape.circle,
                                               ),
-                                              child: Icon(
+                                              child: const Icon(
                                                 Icons.calculate,
                                                 color: Color(0xff2398f4),
                                                 size: 24,
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 16,
                                               width: 16,
                                             ),
-                                            Text(
+                                            const Text(
                                               "Medical Calculators:",
                                               textAlign: TextAlign.start,
                                               overflow: TextOverflow.clip,
@@ -1218,11 +1218,11 @@ class Dashboard extends StatelessWidget {
                                                 color: Color(0xff000000),
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 16,
                                               width: 16,
                                             ),
-                                            Expanded(
+                                            const Expanded(
                                               child: Text(
                                                 "Get access to 800+ evidence based calculators",
                                                 textAlign: TextAlign.start,
@@ -1243,7 +1243,7 @@ class Dashboard extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                               width: 16,
                             ),
@@ -1253,11 +1253,11 @@ class Dashboard extends StatelessWidget {
                               width: MediaQuery.of(context).size.width,
                               height: 50,
                               decoration: BoxDecoration(
-                                color: Color(0xffcbf2f6),
+                                color: const Color(0xffcbf2f6),
                                 shape: BoxShape.rectangle,
                                 borderRadius: BorderRadius.zero,
                                 border: Border.all(
-                                    color: Color(0x4d9e9e9e), width: 1),
+                                    color: const Color(0x4d9e9e9e), width: 1),
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
@@ -1266,7 +1266,7 @@ class Dashboard extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Expanded(
+                                    const Expanded(
                                       flex: 1,
                                       child: Text(
                                         "Social Network for doctors - A special feature on Hidoc Dr.",
@@ -1280,23 +1280,23 @@ class Dashboard extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16,
                                       width: 16,
                                     ),
                                     Chip(
-                                      labelPadding: EdgeInsets.symmetric(
+                                      labelPadding: const EdgeInsets.symmetric(
                                           horizontal: 4, vertical: 0),
-                                      label: Text("Visit"),
-                                      labelStyle: TextStyle(
+                                      label: const Text("Visit"),
+                                      labelStyle: const TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.normal,
                                         color: Color(0xffffffff),
                                       ),
-                                      backgroundColor: Color(0xff00bcd4),
+                                      backgroundColor: const Color(0xff00bcd4),
                                       elevation: 4,
-                                      shadowColor: Color(0xff808080),
+                                      shadowColor: const Color(0xff808080),
                                       shape: RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(16.0),
@@ -1309,7 +1309,7 @@ class Dashboard extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                         width: 16,
                       ),
@@ -1323,11 +1323,11 @@ class Dashboard extends StatelessWidget {
                             padding: EdgeInsets.zero,
                             width: 100.w,
                             decoration: BoxDecoration(
-                              color: Color(0xff081734),
+                              color: const Color(0xff081734),
                               shape: BoxShape.rectangle,
                               borderRadius: BorderRadius.zero,
                               border: Border.all(
-                                  color: Color(0xff081734), width: 1),
+                                  color: const Color(0xff081734), width: 1),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
@@ -1345,14 +1345,14 @@ class Dashboard extends StatelessWidget {
                                           CrossAxisAlignment.center,
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
-                                        Image(
+                                        const Image(
                                           image: AssetImage(
                                               "assets/images/Screenshot 2023-05-11 at 9.52.57 AM.png"),
                                           height: 100,
                                           width: 140,
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(
+                                        const Padding(
+                                          padding: EdgeInsets.symmetric(
                                               horizontal: 8.0),
                                           child: Text(
                                             "#1 Medical app in India for doctors with 800K Monthly Users",
@@ -1366,7 +1366,7 @@ class Dashboard extends StatelessWidget {
                                             ),
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 16,
                                           width: 16,
                                         ),
@@ -1376,7 +1376,7 @@ class Dashboard extends StatelessWidget {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           mainAxisSize: MainAxisSize.max,
-                                          children: [
+                                          children: const [
                                             Icon(
                                               MdiIcons.facebook,
                                               color: Color(0xffffffff),
@@ -1402,7 +1402,7 @@ class Dashboard extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                     width: 16,
                                   ),
@@ -1414,7 +1414,7 @@ class Dashboard extends StatelessWidget {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       mainAxisSize: MainAxisSize.max,
-                                      children: [
+                                      children: const [
                                         Text(
                                           "Reach Us",
                                           textAlign: TextAlign.start,
@@ -1496,7 +1496,7 @@ class Dashboard extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                     width: 16,
                                   ),
@@ -1508,7 +1508,7 @@ class Dashboard extends StatelessWidget {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.center,
                                       mainAxisSize: MainAxisSize.max,
-                                      children: [
+                                      children: const [
                                         Text(
                                           "Hidoc Dr. Features",
                                           textAlign: TextAlign.start,
@@ -1546,11 +1546,11 @@ class Dashboard extends StatelessWidget {
                             width: 100.w,
                             height: 60,
                             decoration: BoxDecoration(
-                              color: Color(0xffcfd8db),
+                              color: const Color(0xffcfd8db),
                               shape: BoxShape.rectangle,
                               borderRadius: BorderRadius.zero,
                               border: Border.all(
-                                  color: Color(0x4d9e9e9e), width: 1),
+                                  color: const Color(0x4d9e9e9e), width: 1),
                             ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -1561,7 +1561,7 @@ class Dashboard extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  children: [
+                                  children: const [
                                     Text(
                                       "© Copyright 2022",
                                       textAlign: TextAlign.start,
@@ -1590,7 +1590,7 @@ class Dashboard extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                Text(
+                                const Text(
                                   "Terms and Conditions | Privacy Policy",
                                   textAlign: TextAlign.start,
                                   overflow: TextOverflow.clip,
@@ -1611,7 +1611,7 @@ class Dashboard extends StatelessWidget {
                 ),
               );
             }
-            return Center(
+            return const Center(
               child: CircularProgressIndicator(),
             );
           }),
