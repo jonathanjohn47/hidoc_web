@@ -515,11 +515,10 @@ class Dashboard extends StatelessWidget {
                               child: Text(
                                 "Read More Bulletins",
                                 style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.normal,
-                                  color: Colors.white
-                                ),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.normal,
+                                    color: Colors.white),
                               ),
                               height: 40,
                               minWidth: 140,
@@ -732,7 +731,8 @@ class Dashboard extends StatelessWidget {
                                           color: Color(0x4d9e9e9e), width: 1),
                                     ),
                                     child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
                                       crossAxisAlignment:
                                           CrossAxisAlignment.center,
                                       mainAxisSize: MainAxisSize.max,
@@ -779,8 +779,10 @@ class Dashboard extends StatelessWidget {
                                                     textAlign: TextAlign.start,
                                                     overflow: TextOverflow.clip,
                                                     style: TextStyle(
-                                                      fontWeight: FontWeight.w400,
-                                                      fontStyle: FontStyle.normal,
+                                                      fontWeight:
+                                                          FontWeight.w400,
+                                                      fontStyle:
+                                                          FontStyle.normal,
                                                       fontSize: 12,
                                                       color: Color(0xff000000),
                                                     ),
@@ -833,7 +835,6 @@ class Dashboard extends StatelessWidget {
               SizedBox(
                 height: 16,
                 width: 16,
-
               ),
               SizedBox(
                 width: 85.w,
@@ -873,7 +874,8 @@ class Dashboard extends StatelessWidget {
                               color: Color(0xfff4f4f4),
                               shape: BoxShape.rectangle,
                               borderRadius: BorderRadius.zero,
-                              border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                              border: Border.all(
+                                  color: Color(0x4d9e9e9e), width: 1),
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -885,8 +887,10 @@ class Dashboard extends StatelessWidget {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Text(
@@ -927,8 +931,8 @@ class Dashboard extends StatelessWidget {
 
                                 ///***If you have exported images you must have to copy those images in assets/images directory.
                                 Image(
-                                  image:
-                                  NetworkImage("https://picsum.photos/250?image=9"),
+                                  image: NetworkImage(
+                                      "https://picsum.photos/250?image=9"),
                                   height: 100,
                                   width: 140,
                                   fit: BoxFit.cover,
@@ -1118,8 +1122,8 @@ class Dashboard extends StatelessWidget {
                               width: 16,
                             ),
                             Chip(
-                              labelPadding:
-                              EdgeInsets.symmetric(horizontal: 4, vertical: 0),
+                              labelPadding: EdgeInsets.symmetric(
+                                  horizontal: 4, vertical: 0),
                               label: Text("Visit"),
                               labelStyle: TextStyle(
                                 fontSize: 14,
@@ -1140,6 +1144,293 @@ class Dashboard extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 16,
+                width: 16,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Container(
+                    margin: EdgeInsets.zero,
+                    padding: EdgeInsets.zero,
+                    width: 100.w,
+                    decoration: BoxDecoration(
+                      color: Color(0xff081734),
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.zero,
+                      border: Border.all(color: Color(0xff081734), width: 1),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Image(
+                                  image: AssetImage(
+                                      "assets/images/Screenshot 2023-05-11 at 9.52.57 AM.png"),
+                                  height: 100,
+                                  width: 140,
+                                ),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 8.0),
+                                  child: Text(
+                                    "#1 Medical app in India for doctors with 800K Monthly Users",
+                                    textAlign: TextAlign.start,
+                                    overflow: TextOverflow.clip,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12,
+                                      color: Color(0xffffffff),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                  width: 16,
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Icon(
+                                      MdiIcons.facebook,
+                                      color: Color(0xffffffff),
+                                      size: 24,
+                                    ),
+                                    Icon(
+                                      MdiIcons.linkedin,
+                                      color: Color(0xffffffff),
+                                      size: 24,
+                                    ),
+                                    Icon(
+                                      MdiIcons.instagram,
+                                      color: Color(0xffffffff),
+                                      size: 24,
+                                    ),
+                                    Icon(
+                                      MdiIcons.youtube,
+                                      color: Color(0xffffffff),
+                                      size: 24,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 16,
+                            width: 16,
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  "Reach Us",
+                                  textAlign: TextAlign.start,
+                                  overflow: TextOverflow.clip,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 18,
+                                    color: Color(0xffffffff),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                  width: 16,
+                                ),
+                                Text(
+                                  "Please contact below details for any other information. ",
+                                  textAlign: TextAlign.start,
+                                  overflow: TextOverflow.clip,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 14,
+                                    color: Color(0xffffffff),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                  width: 16,
+                                ),
+                                Text(
+                                  "Email",
+                                  textAlign: TextAlign.start,
+                                  overflow: TextOverflow.clip,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 14,
+                                    color: Color(0xff00bcd4),
+                                  ),
+                                ),
+                                Text(
+                                  "info@hidoc.co",
+                                  textAlign: TextAlign.start,
+                                  overflow: TextOverflow.clip,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 14,
+                                    color: Color(0xffffffff),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                  width: 16,
+                                ),
+                                Text(
+                                  "Address",
+                                  textAlign: TextAlign.start,
+                                  overflow: TextOverflow.clip,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 14,
+                                    color: Color(0xff00bcd4),
+                                  ),
+                                ),
+                                Text(
+                                  "Infedis Infotech LLP, Office 108, Suyog Center, Gultekdi, Pune- 411 037, Toll Free : 1800-202-5091 ",
+                                  textAlign: TextAlign.start,
+                                  overflow: TextOverflow.clip,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 14,
+                                    color: Color(0xffffffff),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 16,
+                            width: 16,
+                          ),
+                          Expanded(
+                            flex: 3,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  "Hidoc Dr. Features",
+                                  textAlign: TextAlign.start,
+                                  overflow: TextOverflow.clip,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 18,
+                                    color: Color(0xffffffff),
+                                  ),
+                                ),
+
+                                SizedBox(
+                                  height: 16,
+                                  width: 16,
+                                ),
+
+                                ///***If you have exported images you must have to copy those images in assets/images directory.
+                                Image(
+                                  image: AssetImage(
+                                      "assets/images/Screenshot 2023-05-11 at 10.03.48 AM.png"),
+                                  height: 100,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.zero,
+                    padding: EdgeInsets.zero,
+                    width: 100.w,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      color: Color(0xffcfd8db),
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.zero,
+                      border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Text(
+                              "© Copyright 2022",
+                              textAlign: TextAlign.start,
+                              overflow: TextOverflow.clip,
+                              style: TextStyle(
+                                fontWeight: FontWeight.w400,
+                                fontStyle: FontStyle.normal,
+                                fontSize: 14,
+                                color: Color(0xff000000),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 16,
+                              width: 16,
+                            ),
+                            Text(
+                              "Infedis infotech LLP",
+                              textAlign: TextAlign.start,
+                              overflow: TextOverflow.clip,
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                fontStyle: FontStyle.normal,
+                                fontSize: 14,
+                                color: Color(0xff000000),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          "Terms and Conditions | Privacy Policy",
+                          textAlign: TextAlign.start,
+                          overflow: TextOverflow.clip,
+                          style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 14,
+                            color: Color(0xff000000),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               )
             ],
           ),
